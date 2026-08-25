@@ -1,0 +1,188 @@
+{
+  "project_name": "TwinStone Constructions",
+  "tagline": "Building With Purpose. Built To Last.",
+  "app_type": "hybrid_fullstack",
+  "context_type": "Marketing & Secure Admin CMS",
+  "theme_strategy": {
+    "mode": "hybrid_editorial",
+    "primary_surface": "Light Warm White background for marketing story pages; Deep Charcoal Black surface for architectural contrast cards & Admin Dashboard",
+    "visual_ratio": "60% Warm White (#F7F5F0) / 25% Charcoal-Graphite (#171A1C, #252A2D) / 10% Architectural Stone (#E9E4DA) / 5% Luxury Copper-Bronze (#B77A45)"
+  },
+  "colors": {
+    "charcoal_black": "#171A1C",
+    "graphite": "#252A2D",
+    "warm_white": "#F7F5F0",
+    "architectural_stone": "#E9E4DA",
+    "copper_accent": "#B77A45",
+    "deep_text": "#202427",
+    "secondary_text": "#667078",
+    "border_light": "rgba(32, 36, 39, 0.12)",
+    "border_dark": "rgba(233, 228, 218, 0.15)",
+    "glass_bg_light": "rgba(247, 245, 240, 0.85)",
+    "glass_bg_dark": "rgba(23, 26, 28, 0.90)",
+    "rules": [
+      "Never use safety yellow or dominant high-vis orange",
+      "Copper/Bronze #B77A45 is reserved strictly for high-value interactive accents (~5%), hover states, focal badge highlights, and active step markers",
+      "Use #F7F5F0 for primary marketing surfaces, seamlessly offset by #E9E4DA section blocks and #171A1C hero/footer monolithic cards",
+      "Ensure minimum contrast ratio of 4.5:1 for body copy and 3:1 for display headings across light and dark cards"
+    ]
+  },
+  "typography": {
+    "heading_font": "'Manrope', 'Plus Jakarta Sans', sans-serif",
+    "editorial_serif_font": "'Cormorant Garamond', 'Playfair Display', serif",
+    "body_font": "'Inter', sans-serif",
+    "mono_accent": "'JetBrains Mono', monospace",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.08]",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-snug",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed text-[#202427]",
+      "body_muted": "text-sm text-[#667078] leading-relaxed",
+      "label_overline": "text-xs font-semibold tracking-[0.25em] uppercase text-[#B77A45]"
+    },
+    "rules": [
+      "Never use Inter for main section headings or H1; use Manrope or Plus Jakarta Sans with negative letter-spacing",
+      "Incorporate Cormorant Garamond / Playfair Display selectively for quote blocks, luxury project captions, and numbered manifesto headers (e.g. '01. Structural Integrity')",
+      "Overlines must always be uppercase with letter-spacing tracking-[0.2em] or tracking-[0.25em]"
+    ]
+  },
+  "spacing_and_layout": {
+    "system": "Generous architectural grid with explicit asymmetry and negative space",
+    "padding_scale": {
+      "section_py": "py-20 lg:py-32",
+      "container_px": "px-6 sm:px-12 lg:px-20",
+      "card_internal": "p-8 lg:p-12"
+    },
+    "grid_modes": {
+      "tetris_bento": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8 lg:gap-12",
+      "high_density_dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    },
+    "rules": [
+      "Containers with explicit borders MUST have internal padding of minimum p-6 or p-8 to eliminate text-border collisions",
+      "Grid elements must be direct children of the layout wrapper",
+      "Mobile images must respect max-h-[80vh] to preserve layout balance on small screens"
+    ]
+  },
+  "3d_and_motion": {
+    "libraries": [
+      "lenis (Smooth momentum scrolling engine)",
+      "framer-motion (Staggered reveals, kinetic masked text reveals, tab transitions)",
+      "three / @react-three/fiber / @react-three/drei (Interactive architectural 3D stone monolith hero scene)"
+    ],
+    "hero_3d_concept": "A floating architectural stone geometry with metallic copper vein reflections that rotates dynamically on mouse drift and responds to scroll depth on desktop viewports.",
+    "mobile_fallback": "High-resolution static WebP architectural render with subtle CSS subtle parallax shift and floating SVG blueprint grid lines",
+    "motion_patterns": {
+      "on_load_headline": "Kinetic line-by-line masked slide-up reveal (stagger 0.15s, cubic-bezier(0.16, 1, 0.3, 1))",
+      "marquee": "Slow editorial text drift (react-fast-marquee or CSS keyframe over 35s speed, warm stone background, dark copper text)",
+      "scroll_reveals": "Framer motion viewport enter opacity: [0, 1], y: [30, 0] with once: true"
+    }
+  },
+  "components_and_pages": {
+    "public_pages": [
+      {
+        "page": "Home",
+        "key_sections": [
+          "Hero with kinetic masked line-reveal heading + Three.js 3D stone geometry canvas + dual CTAs",
+          "Slow editorial marquee banner ('Precision Engineering • Architectural Mastery • Sustainable Innovation')",
+          "Numbered Manifesto Chapters (01 Vision, 02 Execution, 03 Legacy)",
+          "Featured Projects Cinematic Showcase with interactive hover cards & filter tabs",
+          "Services Grid (Architectural Design, General Contracting, Luxury Residential, Commercial Monoliths)",
+          "Why TwinStone Interactive Bento Card Grid",
+          "Client Testimonial & Press Quote Slider",
+          "Brochure & Specification Download Cards",
+          "Architectural Dark Footer with newsletter & contact trigger"
+        ]
+      },
+      {
+        "page": "About",
+        "key_sections": [
+          "Leadership & Master Architects section with portrait cards",
+          "Company History Timeline (2008 - Present)",
+          "Core Engineering & Sustainability Pillars",
+          "Safety & Compliance Certifications grid"
+        ]
+      },
+      {
+        "page": "Services",
+        "key_sections": [
+          "Detailed Service Cards with expandable scope of work, technical specifications, and past project links"
+        ]
+      },
+      {
+        "page": "Projects (Ongoing & Completed)",
+        "key_sections": [
+          "Filterable Grid (All, Luxury Villas, Commercial, Residential, Restoration)",
+          "Interactive Project Cards with live status badges ('Under Construction', 'Handed Over 2025', 'In Planning')",
+          "Progress bar indicator for ongoing projects (% complete)"
+        ]
+      },
+      {
+        "page": "Project Detail",
+        "key_sections": [
+          "Hero gallery slider with full-bleed architectural photos",
+          "Key specs summary grid (Location, Sq Ft, Architect, Timeline, Budget tier)",
+          "Interactive 360 virtual viewer mock / 3D model viewer",
+          "Blueprint & Material breakdown tabs",
+          "Related projects carousel"
+        ]
+      },
+      {
+        "page": "Process",
+        "key_sections": [
+          "Numbered Process Step-by-Step timeline (01 Consultation → 02 Structural Planning → 03 Material Sourcing → 04 Construction Phase → 05 Quality Audit → 06 Handover)"
+        ]
+      },
+      {
+        "page": "Brochures & Downloads",
+        "key_sections": [
+          "Gated & instant download cards for Corporate Brochure, Villa Specs PDF, Sustainability Report, Materials Catalog"
+        ]
+      },
+      {
+        "page": "Contact",
+        "key_sections": [
+          "Interactive Commission Inquiry Panel (Square footage, project budget, service required, target completion)",
+          "Office Location Cards with interactive Map preview and direct phone/email"
+        ]
+      },
+      {
+        "page": "Legal Pages",
+        "key_sections": ["Privacy Policy", "Terms of Service", "Compliance Statement"]
+      }
+    ],
+    "admin_dashboard": {
+      "authentication": "Secure login screen with username/password & token simulation",
+      "modules": [
+        "Projects Manager (Add/Edit/Delete ongoing & completed projects, image uploads, specs)",
+        "Media Library (Manage project images, floor plans, 3D assets)",
+        "Brochure Management (Upload & configure download links for PDFs)",
+        "Inquiries & Leads Table (Manage submitted contact form commissions with status tags: New, Contacted, In Review)",
+        "SEO & Meta Settings Panel (Page title, meta descriptions, OG images)",
+        "Logo & Brand Assets Settings (Header logo, footer mark management)"
+      ]
+    }
+  },
+  "media_assets": {
+    "hero_architectural_exterior": "https://images.unsplash.com/photo-1721815693498-cc28507c0ba2?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "luxury_villa_facade": "https://images.pexels.com/photos/23947751/pexels-photo-23947751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "architectural_structure": "https://images.unsplash.com/photo-1622396481322-3b83d186701b?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "minimalist_courtyard": "https://images.unsplash.com/photo-1522061405958-6332b642520d?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "curved_modern_concrete": "https://images.unsplash.com/photo-1453586857165-eb78d44460ca?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "3d_house_rendering": "https://images.pexels.com/photos/13203188/pexels-photo-13203188.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "founder_architect": "https://images.unsplash.com/photo-1742981365880-698cfb84492d?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "lead_architect_female": "https://images.unsplash.com/photo-1619799090425-0efe92bd62a7?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "3d_model_architect_working": "https://images.pexels.com/photos/9618125/pexels-photo-9618125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "luxury_living_interior": "https://images.unsplash.com/photo-1776362355123-ca966d36e29c?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "penthouse_lounge_view": "https://images.unsplash.com/photo-1760611655987-d348d6d28174?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "marble_dining_interior": "https://images.pexels.com/photos/27562206/pexels-photo-27562206.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "instructions_to_main_agent": [
+    "Ensure all interactive elements (buttons, links, inputs, filters, tabs, menu triggers) and key metrics include explicit data-testid attributes (e.g., data-testid='hero-cta-button', data-testid='project-filter-completed')",
+    "Do NOT create or modify .tsx files. Use standard React JavaScript (.js / .jsx) components.",
+    "Implement Lenis smooth momentum scrolling across marketing pages for a high-end luxury feel.",
+    "Ensure header navigation has a solid or heavy frosted backdrop-blur background (backdrop-blur-xl bg-[#F7F5F0]/85 or bg-[#171A1C]/90). NEVER use full transparency under text.",
+    "Customize Shadcn components with custom Tailwind rules matching the architectural stone, graphite, and bronze accent aesthetic.",
+    "Ensure sonner is used for toast notifications in contact form submissions and admin dashboard actions."
+  ]
+}
