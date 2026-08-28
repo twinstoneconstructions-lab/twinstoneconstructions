@@ -13,7 +13,21 @@ export function useSettings() {
 export function useProjects(params = {}) {
   return useQuery({
     queryKey: ["projects", params],
-    queryFn: async () => (await api.get("/projects", { params })).data,
+    queryFn: async () => {
+      const response = await api.get("/projects", { params });
+      const data = response.data;
+
+      if (Array.isArray(data)) {
+        return data;
+      }
+
+      if (Array.isArray(data?.projects)) {
+        return data.projects;
+      }
+
+      console.error("Unexpected /projects response:", data);
+      return [];
+    },
     staleTime: 60000,
     retry: 1,
   });
