@@ -1,0 +1,15 @@
+{
+  "short_name": "TwinStone",
+  "name": "TwinStone Constructions",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#171A1C",
+  "background_color": "#F7F5F0",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
